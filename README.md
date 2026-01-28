@@ -51,7 +51,8 @@ It follows these steps:
            I_final = I(A) + (I_detail * 1.8)
 
 📊  Evaluation Metrics
---- 🏁 FINAL AVERAGES ---
-⭐ PSNR: 43.39 dB (Target > 28 for Fidelity)
-⭐ SSIM: 0.9799 (Target > 0.85 for Structure)
-⭐ LPIPS: 0.2537 (Target < 0.2 for Perceptual)
+
+## --- 🏁 FINAL AVERAGES ---.
+⭐ PSNR: 43.39 dB (Target > 28 for Fidelity).
+⭐ SSIM: 0.9799 (Target > 0.85 for Structure).
+⭐ LPIPS: 0.2537 (Target < 0.2 for Perceptual).
