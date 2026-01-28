@@ -39,3 +39,19 @@ graph TD
     Details -->|Boost Factor 1.8x| Fusion
     
     Fusion --> Output[Final Grandmaster Result]
+```
+#
+⚡ Grandmaster Fusion Strategy
+The final fusion script performs texture injection to combine the best of both models.
+It follows these steps:
+1. Aligns Path A (HAT) and Path B (CodeFormer) images.
+2. Extracts high-frequency details from Path B using Gaussian Blur subtraction:
+           I_detail = I(B) - Blur(I(B))
+3. Injects details into Path A with a boost factor:
+           I_final = I(A) + (I_detail * 1.8)
+
+📊  Evaluation Metrics
+--- 🏁 FINAL AVERAGES ---
+⭐ PSNR: 43.39 dB (Target > 28 for Fidelity)
+⭐ SSIM: 0.9799 (Target > 0.85 for Structure)
+⭐ LPIPS: 0.2537 (Target < 0.2 for Perceptual)
